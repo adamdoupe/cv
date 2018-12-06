@@ -1,0 +1,810 @@
+%------------------------------------
+% Typesetting style by: Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\usepackage{etaremune}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+
+\usepackage[scale=0.75]{geometry}
+
+% To add the footer
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{Doup\'e---\thepage}
+
+% Change the styling of the subsection to add more spacing 
+\makeatletter
+\RenewDocumentCommand{\subsection}{sm}{%
+  \par\addvspace{2ex}%
+  \phantomsection{}% reset the anchor for hyperrefs
+  \addcontentsline{toc}{subsection}{#2}%
+  \cvitem[0ex]{}{\strut\subsectionstyle{\textbf{#2}}}%
+  \par\nobreak\addvspace{2ex}\@afterheading}% to avoid a pagebreak after the heading
+\makeatother
+
+\widowpenalty=10000
+\clubpenalty=10000
+
+
+
+\name{Adam}{Doup\'e}
+\address{P.O. Box 878809}{Tempe, AZ 85287-8809}
+\phone[fixed]{480-727-5471}
+\email{doupe@asu.edu}
+\homepage{adamdoupe.com}
+
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+
+
+% DOCUMENT
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2010--2014}{PhD in Computer Science}{University of California, Santa
+  Barbara}{}{}{Advisors: Giovanni Vigna and
+  Christopher Kruegel\\
+  Thesis: Advanced Automated Web Application Vulnerability Analysis
+}  % arguments 3 to 6 can be left empty
+\cventry{2008--2009}{Master's Degree in Computer Science}{University of California, Santa
+  Barbara}{}{}{Advisor: Giovanni Vigna \\
+  Topic: Black Box Web Vulnerability Scanners
+}  % arguments 3 to 6 can be left empty
+\cventry{2004--2008}{Bachelor's Degree in Computer Science with Honors}{University of California, Santa
+  Barbara}{}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Professional Appointments}
+
+\cventry{2017--Present}{Associate Director}{Center for Cybersecurity
+  and Digital Forensics}{Arizona State
+  University}{}{}
+
+\cventry{2014--Present}{Assistant Professor}{Arizona State
+  University}{}{}{}
+
+\section{Research Funding}
+
+\begin{etaremune}
+
+  \item DARPA 2018--2022. \textit{DARPA HACCS: Puppeteer---Achieving Remote Control Over Complex Systems} \$7,474,245, co-PI (w/ Yan Shoshitaishvili PI), share \$1,868,561.
+  
+  \item NSF 2017--2022. \textit{NSF-SFS: Arizona Cyber Defense
+    Scholarship,} \$3,997,784, co-PI (w/ Gail-Joon Ahn PI and Steven
+    Yau, Ziming Zhao, and Dijiang Huang co-PIs), share \$399,778.
+
+  \item NSF 2017--2021. \textit{SaTC: CORE: Medium: Collaborative:
+    Taming Web Content Through Automated Reduction in Browser
+    Functionality,} \$406,080, PI.
+
+  \item Soongsil University 2017--2024. \textit{Automatic Deep Malware
+    Analysis Technology for Cyber Threat Intelligence,} \$708,160,
+    co-PI (w/ Gail-Joon Ahn PI), share \$283,264.
+
+  \item ONR 2017--2019. \textit{XS-Shredder: A Cross-Layer Framework
+    for Removing Code Bloat in Web Applications,} \$1,230,547, PI.
+
+  \item NSF 2017--2022. \textit{CAREER: Next Generation Black-Box Web
+    Application Vulnerability Analysis,} \$416,585, PI.
+  
+  \item NSF 2016--2019. \textit{Collaborative Research: CICI: Secure
+    and Resilient Architecture: SciGuard: Building a Security
+    Architecture for Science DMZ based on SDN and NFV Technologies,}
+    \$499,484, co-PI (w/ Gail-Joon Ahn PI and Dijiang Huang co-PI),
+    share \$149,845.
+
+  \item NSF 2016--2018. \textit{EDU: Collaborative: Educating the
+    Security Workforce through On-Demand Live Competitions,}
+    \$154,643, PI (w/ Gail-Joon Ahn co-PI), share \$77,321.
+
+  \item ONR 2015. \textit{Academic Survey of the Cyber Resiliency of
+    the Total Embedded Systems Platform,} \$49,998, PI. 
+  
+\end{etaremune}
+
+\section{Honors and Awards}
+
+\cventry{2018}{Fulton Schools of Engineering Best Teacher Award}{Arizona State University}{}{}{}{}
+
+\cventry{2017}{Fulton Outstanding Assistant Professor}{Arizona State University}{}{}{}{}
+
+\cventry{2017}{Fulton Schools of Engineering Best Teacher Award}{Arizona State University}{}{}{}{}
+
+\cventry{2017}{NSF CAREER Award}{}{}{}{}{}
+
+\cventry{2016}{Best Paper Award}{Toward Authenticated Caller ID
+  Transmission: The Need for a Standardized Authentication Scheme in
+  Q.731.3 Calling Line Identification Presentation}{ITU Kaleidoscope}{}{}{}
+
+\cventry{2016}{Fulton Schools of Engineering Best Teacher Award---Top
+  5\%}{Arizona State University}{}{}{}
+
+\cventry{2015}{Best Paper Award}{A Large-Scale Study of Mobile Web App
+  Security}{Mobile Security Technologies Workshop}{}{}{}
+
+\cventry{2013}{Outstanding Publication Award in Computer
+  Science}{Enemy of the State: A State-Aware Black-Box Web
+  Vulnerability Scanner}{University of California, Santa Barbara}{}{}
+
+\cventry{2011}{Outstanding Teaching Assistant Award}{CS
+  279---(Graduate) Network Security and Intrusion
+  Detection}{University of California, Santa Barbara}{}{}
+
+\cventry{2010}{Gold Star Award}{Microsoft}{}{}{}
+
+\cventry{2009}{Outstanding Teaching Assistant Award}{CS 177---Introduction to Computer Security}{University of California, Santa Barbara}{}{}
+
+
+\section{Publications}
+
+Students advised, co-advised, or mentored are underlined,
+undergraduate students contain an asterisk next to their name, and
+conference acceptance rates are provided when available. First
+authorship indicates primary contribution, unless otherwise noted.
+
+\subsection{Journal Papers (refereed)}
+
+\begin{etaremune}
+
+\item \underline{Huahong Tu}, \textbf{Adam Doup\'e}, Ziming Zhao, and
+  Gail-Joon Ahn, ``Toward Standardization of Authenticated Caller ID
+  Transmission,'' in \emph{IEEE Communications Standards Magazine},
+    1(3), pp. 30-36, October 2017.
+
+\item \underline{Sai Prashanth Chandramouli}, Ziming Zhao,
+  \textbf{Adam Doup\'e}, and Gail-Joon Ahn, ``E-mail Header Injection
+  Vulnerabilities,'' in \emph{it - Information Technology}, 59(2), pp.
+  67-72, March 2017.
+
+\end{etaremune}
+
+\subsection{Conference Papers with Proceedings (refereed)}
+
+\begin{etaremune}
+
+\item \underline{Vaibhav Hemant Dixit}, Adam Doup\'e, Yan
+  Shoshitaishvili, Ziming Zhao, and Gail-Joon Ahn, ``AIM-SDN:
+  Attacking Information Mismanagement in SDN-datastores,'' in
+  \emph{Proceedings of the ACM Conference on Computer and
+    Communications Security (CCS)}, Toronto, Canada, October 2018.
+
+\item \underline{Adam Oest}, \underline{Yeganeh Safaei}, Adam Doup\'e,
+  Gail-Joon Ahn, Brad Wardman, and Gary Warner, ``Inside a Phisher's
+  Mind: Understanding the Anti-phishing Ecosystem Through Phishing Kit
+  Analysis,'' in \emph{Proceedings of the Symposium on Electronic
+    Crime Research (eCrime)}, San Diego, May 2018. 
+  
+\item \underline{Sai Prashanth Chandramouli}, Pierre-Marie Bajan,
+  Christopher Kruegel, Giovanni Vigna, Ziming Zhao, Adam Doup\'e, and
+  Gail-Joon Ahn, ``Measuring E-Mail Header Injections on the World
+  Wide Web,'' in \emph{Proceedings of the ACM Symposium on Applied
+    Computing (SAC)}, Pau, France, April 2018.
+
+\item \underline{Sukwha Kyung}, \underline{Wonkyu Han},
+  \underline{Naveen Tiwari}, \underline{Vaibhav Dixit},
+  \underline{Lakshmi Srinivas}, Ziming Zhao, Adam Doup\'e, and
+  Gail-Joon Ahn, ``HoneyProxy: Design and Implementation of
+  Next-Generation Honeynet via SDN,'' in \emph{Proceedings of the IEEE
+    Conference on Communications and Network Security (CNS)}, Las
+  Vegas, NV, October 2017. 
+
+\item Sailik Sengupta, Satya Gautam Vadlamudi, Subbarao Kambhampati,
+  \textbf{Adam Doup\'e}, Ziming Zhao, \underline{Marthony Taguinod},
+  and Gail-Joon Ahn, ``A Game Theoretic Approach of Strategy
+  Generation for Moving Target Defense in Web Applications,'' in
+  \emph{Proceedings of the International Conference on Autonomous Agents
+    and Multiagent Systems (AAMAS)}, Sao Paulo, May 2017.
+
+\item Niall McLaughlin, Jesus Martinez del Rincon, BooJoong Kang,
+  Suleiman Yerima, Paul Miller, Sakir Sezer, \underline{Yeganeh
+    Safaei}, \underline{Erik Trickel}, Ziming Zhao, \textbf{Adam
+    Doup\'e}, Gail-Joon Ahn, ``Deep Android Malware Detection,'' in
+  \emph{Proceedings of the ACM on Conference on Data and Application
+    Security and Privacy (CODASPY)}, Scottsdale, Arizona, March 2017.
+
+\item \underline{Huahong Tu}, \textbf{Adam Doup\'e}, Ziming Zhao, and
+  Gail-Joon Ahn, ``Toward Authenticated Caller ID Transmission: The
+  Need for a Standardized Authentication Scheme in Q.731.3 Calling
+  Line Identification Presentation,'' in \emph{Proceedings of the ITU
+    Kaleidoscope}, Bangkok, Thailand, November 2016. \\
+  \textbf{Best Paper Award}
+
+\item \underline{Mike Mabey}, \textbf{Adam Doup\'e}, Ziming Zhao, and
+  Gail-Joon Ahn, ``dbling: Identifying Extensions Installed on
+  Encrypted Web Thin Clients,'' in \emph{Proceedings of the Digital
+    Forensics Research Conference (DFRWS)}, Seattle, WA, August 2016.
+
+\item \underline{Wonkyu Han}, Hongxin Hu, Ziming Zhao, \textbf{Adam
+  Doup\'e}, Gail-Joon Ahn, Kuang-Ching Wang and Juan Deng,
+  ``State-aware Network Access Management for Software-Defined
+  Networks,'' in \emph{Proceedings of the ACM Symposium on Access
+    Control Models and Technologies (SACMAT)}, Shanghai, China, June
+  2016.
+
+\item \underline{Kevin Liao}$^*$, Ziming Zhao, \textbf{Adam Doup\'e},
+  and Gail-Joon Ahn, ``Behind Closed Doors: Measurement and Analysis
+  of CryptoLocker Ransoms in Bitcoin,'' in \emph{Proceedings of the
+    Symposium on Electronic Crime Research (eCrime)}, Toronto, Canada,
+  June 2016.
+
+\item \underline{Huahong Tu}, \textbf{Adam Doup\'e}, Ziming Zhao, and
+  Gail-Joon Ahn, ``SoK: Everyone Hates Robocalls: A Survey of
+  Techniques against Telephone Spam,'' in \emph{Proceedings of the
+    IEEE Symposium on Security and Privacy}, San Jose, CA, May 2016.
+  (\textbf{13.3\%} acceptance rate.)
+
+\item \underline{Yiming Jing}, Gail-Joon Ahn, \textbf{Adam Doup\'e},
+  and Jeong Hyun Yi, ``Checking Intent-based Communication in Android
+  with Intent Space Analysis,'' in \emph{Proceedings of the ACM
+    Symposium on Information, Computer and Communications Security
+  (AsiaCCS)}, Xi’an, China, May 2016. (\textbf{20.9\%} acceptance
+  rate.)
+
+\item Satya Gautam Vadlamudi, Sailik Sengupta, \underline{Marthony
+  Taguinod}, Ziming Zhao, \textbf{Adam Doup\'e}, Gail-Joon Ahn and
+  Subbarao Kambhampati, ``Moving Target Defense for Web Applications
+  using Bayesian Stackelberg Games (Extended Abstract),'' in
+  \emph{Proceedings of the International Conference on Autonomous
+    Agents and Multiagent Systems (AAMAS)}, Singapore, May 2016.
+
+\item Vitor Afonso, Antonio Bianchi, Yanick Fratantonio, \textbf{Adam
+  Doup\'e}, Mario Polino, Paulo de Geus, Christopher Kruegel, and
+  Giovanni Vigna, ``Going Native: Using a Large-Scale Analysis of
+  Android Apps to Create a Practical Native-Code Sandboxing Policy,''
+  in \emph{Proceedings of the ISOC Network and Distributed System
+    Security Symposium (NDSS)}, San Diego, CA, February 2016. (\textbf{15.4\%}
+  acceptance rate.)
+
+\item \underline{Carlos E. Rubio-Medrano}, Ziming Zhao, \textbf{Adam
+  Doup\'e}, and Gail-Joon Ahn, ``Federated Access Management for
+  Collaborative Network Environments: Framework and Case Study,'' in
+  \emph{Proceedings of the ACM Symposium on Access Control Models and
+    Technologies (SACMAT)}, Vienna, Austria, June 2015. (\textbf{28.8\%}
+  acceptance rate.)
+
+\item Yan Shoshitaishvili, Luca Invernizzi, \textbf{Adam Doup\'e}, and
+  Giovanni Vigna, ``Do You Feel Lucky? A Large-Scale Analysis of
+  Risk-Rewards Trade-Offs in Cyber Security,'' in \emph{Proceedings of
+    the ACM Symposium on Applied Computing (SAC 2014)}, Gyeongju,
+  Korea, March 2014.
+
+\item \textbf{Adam Doup\'e}, Weidong Cui, Mariusz H. Jakubowski,
+  Marcus Peinado, Christopher Kruegel, and Giovanni Vigna, ``deDacota:
+  Toward Preventing Server-Side XSS via Automatic Code and Data
+  Separation,'' in \emph{Proceedings of the 20th ACM Conference on
+    Computer and Communications Security (CCS)}, Berlin, Germany,
+  November 2013. (\textbf{19.8\%} acceptance rate.)
+
+\item \textbf{Adam Doup\'e} and Janet L. Kayfetz, ``Writing Groups in
+  Computer Science Research Labs,'' in \emph{Proceedings of the
+    Frontiers in Education Conference (FIE 2013)}, Oklahoma City, OK,
+  October 2013.
+
+\item \underline{Pierre Payet}, \textbf{Adam Doup\'e}, Christopher
+  Kruegel, and Giovanni Vigna, ``EARs in the Wild: Large-Scale
+  Analysis of Execution After Redirect Vulnerabilities,'' in
+  \emph{Proceedings of the ACM Symposium on Applied Computing (SAC
+    2013)}, Coimbra, Portugal, March 2013.
+
+\item \textbf{Adam Doup\'e}, Ludovico Cavedon, Christopher Kruegel,
+  and Giovanni Vigna, ``Enemy of the State: A State-Aware Black-Box
+  Web Vulnerability Scanner,'' in \emph{Proceedings of the 21st USENIX
+    conference on Security (USENIX 2012)}, Bellevue, WA, August 2012.
+  (\textbf{19.4\%} acceptance rate.) \\
+  \textbf{Outstanding Publication Award in Computer
+  Science, UC Santa Barbara}
+
+\item \textbf{Adam Doup\'e}, Manuel Egele, Benjamin Caillat, Gianluca
+  Stringhini, Gorkem Yakin, Ali Zand, Ludovico Cavedon, and Giovanni
+  Vigna, ``Hit 'em Where it Hurts: A Live Security Exercise on Cyber
+  Situational Awareness,'' in \emph{Proceedings of the Annual Computer
+    Security Applications Conference (ACSAC 2011)}, Austin, TX,
+  December 2011. (\textbf{20\%} acceptance rate.)
+
+\item \textbf{Adam Doup\'e}, Bryce Boe, Christopher Kruegel, and
+  Giovanni Vigna, ``Fear the EAR: Discovering and Mitigating Execution
+  After Redirect Vulnerabilities,'' in \emph{Proceedings of the 18th
+    ACM Conference on Computer and Communications Security (CCS
+    2011)}, Chicago, IL, October 2011. (\textbf{14\%} acceptance rate.)
+
+\item \textbf{Adam Doup\'e}, Marco Cova, and Giovanni Vigna, ``Why
+  Johnny Can't Pentest: An Analysis of Black-box Web Vulnerability
+  Scanners,'' in \emph{Proceedings of the Seventh Conference on
+    Detection of Intrusions and Malware \& Vulnerability Assessment
+    (DIMVA 2010)}, Bonn, Germany, July 2010. (\textbf{34\%} acceptance rate.)
+  
+\end{etaremune}
+
+\subsection{Workshop Papers with Proceedings (refereed)}
+
+\begin{etaremune}
+
+\item \underline{Vaibhav Dixit}, \underline{Sukwha Kyung}, Ziming
+  Zhao, Adam Doupé, Yan Shoshitaishvili, and Gail-Joon Ahn,
+  ``Challenges and Preparedness of SDN-based Firewalls,'' in
+  \emph{Proceedings of the ACM International Workshop on Security in
+    Software Defined Networks and Network Function Virtualization
+    (SDN-NFV Sec)}, Tempe, AZ, March 2018. 
+
+\item Carlos E. Rubio-Medrano, \underline{Josephine Lamp}$^*$, Adam
+  Doup\'e, Ziming Zhao, and Gail-Joon Ahn, ``Mutated Policies: Towards
+  Proactive Attribute-based Defenses for Access Control,'' in
+  \emph{Proceedings of the Workshop on Moving Target Defense (MTD)},
+  Dallas, TX, October 2017. 
+
+\item \underline{Erik Trickel}, Francesco Disperati, Eric Gustafson,
+  \underline{Faezeh Kalantari}, \underline{Mike Mabey},
+  \underline{Naveen Tiwari}, \underline{Yeganeh Safaei}, \textbf{Adam
+    Doup\'e}, and Giovanni Vigna, ``Shell We Play A Game?
+  CTF-as-a-service for Security Education,'' in \emph{Proceedings of
+    the USENIX Workshop on Advances in Security Education (ASE)},
+  Vancouver, CA, August 2017.
+      
+\item Patrick Mutchler, \underline{Yeganeh Safaei}, \textbf{Adam
+  Doup\'e}, and John Mitchell, ``Target Fragmentation in Android
+  Apps,'' in \emph{Proceedings of the Mobile Security Technologies
+    Workshop (MoST)}, San Jose, CA, May 2016.
+
+\item \underline{Wonkyu Han}, Ziming Zhao, \textbf{Adam Doup\'e}, and
+  Gail-Joon Ahn, ``HoneyMix: Toward SDN-based Intelligent Honeynet,''
+  in \emph{Proceedings of the ACM International Workshop on Security
+    in Software Defined Networks and Network Function Virtualization
+    (SDN-NFV Sec)}, New Orleans, LA, March 2016.
+
+\item \underline{Carlos E. Rubio-Medrano}, \underline{Josephine
+  Lamp}$^*$, \underline{Marthony Taguinod}, \textbf{Adam Doup\'e},
+  Ziming Zhao, and Gail-Joon Ahn, ``Position Paper: Towards a Moving
+  Target Defense Approach for Attribute-based Access Control,'' in
+  \emph{Proceedings of the ACM Workshop on Attribute Based Access
+    Control (ABAC)}, New Orleans, LA, March 2016.
+
+\item Patrick Mutchler, \textbf{Adam Doup\'e}, John Mitchell,
+  Christopher Kruegel, and Giovanni Vigna, ``A Large-Scale Study of
+  Mobile Web App Security,'' in \emph{Proceedings of the Mobile
+    Security Technologies Workshop (MoST)}, San Jose, CA, May 2015. \\
+  \textbf{Best Paper Award}
+
+\item Giovanni Vigna, Kevin Borgolte, Jacopo Corbetta, \textbf{Adam
+  Doup\'e}, Yanick Fratantonio, Luca Invernizzi, Dhilung Kirat, and
+  Yan Shoshitaishvili, ``Ten Years of iCTF: The Good, The Bad, and The
+  Ugly,'' in \emph{Proceedings of the USENIX Summit on Gaming}, Games
+  and Gamification in Security Education (3GSE), San Diego, CA, August
+  2014.
+
+\end{etaremune}
+
+\subsection{Book Chapters}
+
+\begin{etaremune}
+
+\item Gail-Joon Ahn, \textbf{Adam Doup\'e}, Ziming Zhao, and
+  \underline{Kevin Liao}, ``Ransomware and cryptocurrency: Partners in
+  crime,'' book chapter in Thomas J.\ Holt, Ed., \emph{Cybercrime
+    Through an Interdisciplinary Lens}, pp.\ 105--126, Routledge
+  Studies in Crime and Society, Taylor \& Francis Publishers, 2016.
+  
+\end{etaremune}
+
+\subsection{Invited Papers}
+
+\begin{etaremune}
+
+\item \underline{Ajay Modi}, \underline{Zhibo Sun}, \underline{Anupam
+  Panwar}, \underline{Tejas Khairnar}, Ziming Zhao, \textbf{Adam
+  Doup\'e}, and Gail-Joon Ahn, ``Towards Automated Threat Intelligence
+  Fusion,'' in \emph{Proceedings of the IEEE International Conference
+    on Collaboration and Internet Computing (CIC)}, November 2016.
+
+\item \underline{Marthony Taguinod}, \textbf{Adam Doup\'e}, Ziming
+  Zhao, and Gail-Joon Ahn, ``Toward a Moving Target Defense for Web
+  Applications,'' in \emph{Proceedings of the IEEE International
+    Conference on Information Reuse and Integration (IRI)}, San
+  Francisco, CA, August 2015.
+\end{etaremune}
+
+\subsection{Patent Activity}
+
+\begin{etaremune}
+
+  \item Weidong Cui, Adam Doup\'e, Mariusz Jakubowski, and Marcus
+    Peinado, ``Automatic Code and Data Separation of Web
+    Application,'' \emph{Patent US9774620B2}, 2017. 
+
+  \item \underline{Huahong Tu}, \textbf{Adam Doup\'e}, Ziming Zhao,
+    and Gail-Joon Ahn, ``Systems and Methods of Authenticating Caller
+    Identity and Call Request Header Information for Outbound
+    Telephony Communications,'' \emph{Provisional Patent}, 2016.
+
+  
+\end{etaremune}
+
+\section{Invited Talks}
+
+\begin{etaremune}
+
+  \item Participated in the ``Education and Workforce'' panel at the
+    ASU Congressional Conference on Cybersecurity, August 2017. 
+  
+  \item Participated in the ``Rigor in Experimentation'' panel at the
+    USENIX Workshop on Cyber Security Experimentation and Test (CSET),
+    August 2017.
+
+  \item ``The Effectiveness of Telephone Phishing Scams and Possible Solutions,''
+    Invited talk at University College London, London, UK, June
+    2017.
+  
+  \item ``Everybody Hates Robocalls: What Can We Do About It?,''
+    Invited talk at Stony Brook University, Stony Brook, NY, April
+    2017.
+
+  \item Moderated the ``Trustworthy Data Science'' panel at the ACM
+    Conference on Data and Applications Security and Privacy
+    (CODASPY), March 2017.
+
+  \item ``Large-Scale Security Analysis of Android Applications,''
+    Invited talk for the 3rd International Symposium on Mobile
+    Security (MSEC 2016), December 2016.
+
+  \item Moderated the ``Security Competitions'' panel at the USENIX
+    Security Symposium, August 2016.
+
+  \item ``A Computer in Every Pocket: Securing Mobile Applications,''
+    Invited talk by Dr.\ Jennifer Hackney Price, ASU West, September
+    2016.
+
+  \item ``Everything You've Ever Wanted to Know About Black-Box Web
+    Vulnerability Scanners (But Were Afraid to Ask),'' Invited talk,
+    Open Web Application Security Project (OWASP) Phoenix Chapter,
+    June 2016.
+
+  \item ``Using Static Analysis to Tame the Wild Wild Web,'' Invited
+    talk at Georgia Tech, Georgia, AL, February 2015.
+ 
+  \item ``Into the Mind of the Hacker,'' Three hour workshop at UC
+    Santa Barbara by request of Web Standard Group, Santa Barbara, CA,
+    April 2012.
+
+  \item ``Fear the EAR: Discovering and Mitigating Execution After
+    Redirect Vulnerabilities,'' Invited talk at Raytheon, Santa
+    Barbara, CA, October 2011.
+
+\end{etaremune}
+
+\section{Service}
+
+%% Need to put moderating panel as USENIX Security.
+
+%% Also conference session chair? 
+
+\subsection{Program Committee}
+
+\cvitem{2019}{Network and Distributed System Security Symposium (NDSS)}
+\cvitem{2018}{Annual Computer Security Applications Conference (ACSAC)}
+\cvitem{2018}{ACM Conference on Computer and Communications Security (CCS)}
+\cvitem{2019}{IEEE Symposium on Security and Privacy}
+\cvitem{2018}{Conference on Detection of Intrusions and Malware \&
+  Vulnerability Assessment (DIMVA)}
+\cvitem{2018}{IEEE International Conference on Distributed Computing Systems (ICDCS)}
+\cvitem{2018}{USENIX Security Symposium (USENIX)}
+\cvitem{2018}{Network and Distributed System Security Symposium (NDSS)}
+\cvitem{2017}{Annual Computer Security Applications Conference (ACSAC)}
+\cvitem{2017}{ACM Conference on Computer and Communications Security (CCS)}
+\cvitem{2017}{Conference on Detection of Intrusions and Malware \&
+  Vulnerability Assessment (DIMVA)}
+\cvitem{2017}{USENIX Security Symposium (USENIX)}
+\cvitem{2017}{ACM Symposium on Applied Computing (SAC)}
+\cvitem{2016}{ACM Conference on Computer and Communications Security (CCS)}
+\cvitem{2016}{USENIX Security Symposium (USENIX)}
+\cvitem{2016}{International Conference on Availability, Reliability and Security (ARES)}
+\cvitem{2016}{International World Wide Web Conference (WWW)}
+\cvitem{2016}{ACM Symposium on Applied Computing (SAC)}
+\cvitem{2015}{ACM Conference on Computer and Communications Security (CCS)}
+\cvitem{2015}{USENIX Security Symposium (USENIX)}
+\cvitem{2015}{International Conference on Availability, Reliability and Security (ARES)}
+\cvitem{2015}{International Conference on Web Engineering (ICWE)}
+\cvitem{2015}{OWASP AppSecEU}
+\cvitem{2015}{International World Wide Web Conference (WWW)}
+\cvitem{2013}{GreHack}
+
+\subsection{Conference Reviewer}
+
+\cvitem{2016}{Frontiers in Education (FIE)}
+\cvitem{2015}{Frontiers in Education (FIE)}
+\cvitem{2014}{Frontiers in Education (FIE)}
+\cvitem{2013}{Frontiers in Education (FIE)}
+
+\subsection{Journal Reviewer}
+
+\cvlistitem{ACM Transactions on Architecture and Code Optimization}
+\cvlistitem{ACM Transactions on the Web}
+\cvlistitem{ACM Transactions on Information and System Security (TISSEC)}
+\cvlistitem{Computers — Open Access Journal}
+\cvlistitem{Future Generation Computer Systems}
+\cvlistitem{IET Software}
+\cvlistitem{IEEE Transactions on Information Forensics \& Security}
+\cvlistitem{IEEE Transactions on Dependable and Secure Computing}
+\cvlistitem{IEEE Transactions on Reliability}
+\cvlistitem{IEEE/ACM Transactions on Networking}
+\cvlistitem{Journal of Software Testing, Verification and Reliability
+  (STVR)}
+
+\subsection{Conference Organization}
+
+\cvitem{2018}{Tutorial Chair for ACM Symposium on Information, Computer and Communications Security  
+  (AsiaCCS)}
+\cvitem{2017}{Panel Chair for ACM Conference on Data and
+  Application Security and Privacy (CODASPY)}
+\cvitem{2015}{Poster Co-Chair for USENIX Security Symposium}
+\cvitem{2012}{Chair of Graduate Student Workshop on Computing
+  (GSWC), UC Santa Barbara. Raised record \$8,600 from industry,
+  organized larger venue, ensured reviews were written, facilitated PC
+  meeting, and hosted actual event.}
+\cvitem{2011}{Industry Liaison for Graduate Student Workshop on
+  Computing (GSWC), UC Santa Barbara. Raised record \$8,500 from
+  industry sponsors Google, AppFolio, Lastline, Qualcomm, and
+  Microsoft.}
+
+\subsection{Proposal Reviewer}
+
+\cvitem{2018}{NSF SaTC Panel Reviewer}
+\cvitem{2018}{NSF SaTC-EDU Panel Reviewer}
+\cvitem{2015}{NSF SaTC Panel Reviewer}
+
+\subsection{Faculty Advisor for Student Groups}
+
+\cvitem{2016--Present}{Faculty Advisor for AZ Saber, a student group
+  dedicated to teaching people the basics of swordsmanship and
+  safety.}
+
+\cvitem{2015--Present}{Faculty Advisor for Software Developers
+  Association (SoDA), the largest student organization in the Fulton
+  Schools of Engineering}
+
+\cvitem{2014--Present}{Faculty Advisor for pwndevils, a student
+  organization affiliated with the Center for Cybersecurity and
+  Digital Forensics. The group meets weekly to practice ethical
+  hacking skills to compete in Capture the Flag competitions.}
+
+\subsection{Department Service}
+
+\cvitem{2018}{Cybersecurity Faculty Search Committee Chair, Arizona State
+  University}
+\cvitem{2014--Present}{PhD Admissions Committee, Arizona State
+  University}
+\cvitem{2016}{Cybersecurity Faculty Search Committee, Arizona State
+  University}
+\cvitem{2015}{Cybersecurity Faculty Search Committee, Arizona State
+  University}
+
+\subsection{Advisory Board}
+
+\cvitem{2017--2019}{Advisory board of the EPSRC UK project ``ACCEPT:
+  Addressing Cybersecurity and Cybercrime via a co-Evolutionary
+  aPproach to reducing human-relaTed risks''
+  \url{http://accept.sccs.surrey.ac.uk}}
+
+\subsection{Media Interactions}
+
+\cvitem{April, 4, 2018}{``You Can't Clean Up a Data Spill.'' Quoted by
+  April Glaser for Slate on the Facebook data leaks.}
+
+\cvitem{October, 10, 2017}{``ASU director testifies at Equifax Senate
+  hearing.'' Interviewed by Ethan Millman for The State Press on the
+  Equifax data breach.}
+
+\cvitem{August, 28, 2017}{``Junk call nightmare flooded woman with
+  hundreds of bizarre phone calls a day.'' Interviewed by Jon Brodkin
+  for Ars Technica on our robocall and caller ID spoofing research.}
+
+\cvitem{August, 15, 2017}{``How you can stop those annoying
+  robocalls.'' Appearance on CBS WNCN (North Carolina) discussing our
+  robocall research.}
+
+\cvitem{August, 7, 2017} {``ASU engineer Adam Doup\'e looks to
+  safeguard personal data through advanced automated vulnerability
+  analysis tools.'' Interview with Erik Wirtanen on my CAREER award} 
+
+\cvitem{June, 19, 2017} {``ASU team tests `green padlock' solution to
+  scam phone calls.'' Interviewed by Derek Staahl for 3TV and CBS 5
+  for a story on our caller ID security indicator research}
+
+\cvitem{June, 13, 2017} {``Receiving more robocalls than ever? An ASU
+  researcher may have a solution.'' Interview with Leslie Minton on our
+  telephony security research}
+
+\cvitem{March, 8, 2017} {``Robocall ringing your cellphone? Here's
+  what not to do.'' My PhD student Huahong (Raymond) Tu interviewed by
+  Ian Schwartz for CBS 5 for a story on robocalls}
+
+\cvitem{January, 31, 2017} {``Professors explain the flaws of a
+  'password system' in a digital world.'' Interview by Aravind
+  Sreenivasa for The State Press, ASU's student paper, on the state of
+  password security}
+
+\cvitem{January, 10, 2017} {``State computers hit with suspected
+  malware attack.'' Interview with William Pitts for 12 News about
+  recent reports of state of AZ HR computers infected with malware}
+
+\cvitem{October, 19, 2016} {``How the FCC, the telecom industry and
+  computer programmers are working to fight robocalls.'' My PhD
+  student Huahong (Raymond) Tu interviewed by Larry Mantle for LA’s KPCC’s AirTalk radio program for a story on robocalls}
+
+\cvitem{October, 4, 2016} {``Fed up with rising robocalls, millions
+  say ‘Do Not Call’ list doesn’t work and want relief.'' My PhD
+  student Huahong (Raymond) Tu quoted in The Orange Country Register for a story on robocalls by Lily Leung}
+
+\cvitem{September, 23, 2016} {``Why is Yahoo hack so problematic?.'' Interview with Ryan Cody for 12 News about the impact of the Yahoo breach and why email security is so important.}
+
+\cvitem{August, 29, 2016} {``Russian hack targets Arizona voter
+  information.'' Interview with Brahm Resnik for 12 News about recent allegations of Russian hackers targeting Arizona voter registration.}
+
+\cvitem{August, 29, 2016} {``Russian hackers tried to break into AZ
+  voter database.'' Interview with Brahm Resnik for 12 News about recent allegations of Russian hackers targeting Arizona voter registration.}
+
+\cvitem{July, 27, 2016} {``DNC email leak should be a lesson for all
+  of us.'' Interview with Ryan Cody for 12 News about the importance of securing your personal email and tips to keep your personal email secure.}
+
+\cvitem{March, 1, 2016} {``Software Development Association students
+  compete, network and have fun.'' Story about the ASU Software Developer Association (SoDA) 2016 Coding Competition.}
+
+\cvitem{February, 4, 2016} {``Arizona Department of Revenue IT Systems
+  Vulnerable.'' Interview with Amber Kahwaji for Cronkite News about an AZ Department of Revenue Report on IT Vulnerabilities}
+
+\cvitem{July, 27, 2015} {``Exclusive: MCAO talked about buying
+  spyware.'' Interview with William Pitts for 12 News about details of the Hacking Team leaks.}
+
+\cvitem{April, 22, 2015} {``Feds: Terrorist could hack your plane.'' Interview with William Pitts for 12 News about hacking airplanes.}
+
+
+
+\section{Research Experience}
+
+\cventry{2013 (Summer)}{Visiting PhD Student}{Stanford
+  University}{Advisor: John C. Mitchell}{}{}
+
+\cventry{2012 (Summer)}{Research Intern}{Microsoft Research}{Advisor:
+  Weidong Cui}{}{}
+
+\section{Industry Experience}
+
+\cventry{2009--2010}{Software Developer Engineer}{Microsoft}{Developed
+  as a team a C\# Microsoft Word plug-in to assist technical writers.
+  Met critical deadlines in high-pressure situations}{}{}
+
+\cventry{2008 (Summer)}{Software Developer Engineer
+  Intern}{Microsoft}{Developed a C\# application that could save a
+  technical writer documenting XML schemas 20 hours in 2 weeks} {}{}
+
+\cventry{2007--2008}{Software Developer}{AT\&T Government
+  Solutions}{Developed and maintained a large C++ desktop
+  application}{}{}
+
+\cventry{2005--2010}{Founder/Developer}{WootWatchers.com}{Founded
+  WootWatchers.com using Ruby on Rails connecting to a MySQL backend.
+  At its peak had 4,000 users}{}{}
+
+\cventry{2004--2005}{Mobile Produce Manager}{VCEL, Inc.}{Started off
+  developing a client-server J2ME application. Then maintained and
+  developed the server back-end using PHP}{}{}
+
+
+\section{Teaching Experience}
+
+\subsection{Instructor}
+
+\cvitem{Spring 2018}{CSE 545 ``Software Security'' at ASU.
+  \textbf{4.66}/5 course evaluation and \textbf{4.78}/5 instructor
+  evaluation from 56 of 107 enrolled students.}
+
+\cvitem{Fall 2017}{CSE 465 ``Information Assurance'' at ASU.
+  \textbf{4.58}/5 course evaluation and \textbf{4.74}/5 instructor
+  evaluation from 27 of 120 enrolled students.}
+
+\cvitem{Spring 2017}{CSE 545 ``Software Security'' at ASU.
+  \textbf{4.72}/5 course evaluation and \textbf{4.82}/5 instructor
+  evaluation from 92 of 139 enrolled students.}
+
+\cvitem{Fall 2016}{CSE 340 ``Principles of Programming
+  Languages'' at ASU. \textbf{4.76}/5 course evaluation and
+  \textbf{4.8}/5 instructor evaluation from 71 of 223 enrolled students. }
+
+\cvitem{Spring 2016}{CSE 340 ``Principles of Programming
+  Languages'' at ASU. \textbf{4.5}/5 course evaluation and \textbf{4.88}/5 instructor
+  evaluation from 32 of 119 enrolled students. }
+
+\cvitem{Spring 2016}{CSE 545 ``Software Security'' at ASU.
+  \textbf{4.73}/5 course evaluation and \textbf{4.79}/5 instructor
+  evaluation from 73 of 119 enrolled students.}
+
+\cvitem{Fall 2015}{CSE 340 ``Principles of Programming Languages'' at
+  ASU. \textbf{4.46}/5 course evaluation and \textbf{4.74}/5
+  instructor evaluation from 92 out of the 204 students.}
+
+\cvitem{Spring 2015}{Created CSE 591 ``Security and Vulnerability
+  Analysis'' at ASU. \textbf{4.73}/5 course evaluation and
+  \textbf{4.89}/5 instructor evaluation from 48 of 63
+  enrolled students.}
+
+\cvitem{Fall 2013}{Co-created and co-taught ``Recent Trends in
+  Computing Research'' at University of California, Santa Barbara, a
+  2-unit seminar graduate class.}
+
+\subsection{Current Thesis Advisor (Academic Committee Chair)}
+
+\cvitem{2015--Present}{Yeganeh Safaei (PhD Student)}
+\cvitem{2016--Present}{Erik Trickel (PhD Student)}
+\cvitem{2016--Present}{Faris Kokulu (PhD Student)}
+\cvitem{2016--Present}{Faezeh Kalantari (PhD Student)}
+\cvitem{2016--Present}{Adam Oest (PhD Student)}
+
+
+\subsection{Prior Thesis Advisor (Academic Committee Chair)}
+
+\cvitem{2017}{Marthony T. Taguinod (Masters) Thesis: ``Moving Target Defense Framework for Web Applications.''}
+\cvitem{2017}{Ashwath Anand (Masters) Thesis: ``Threats, Countermeasures, and Research Trends for BLE-Based IoT Devices.''}
+\cvitem{2017}{Huahong Tu (PhD) Dissertation: ``From Understanding
+  Telephone Scams to Implementing Authenticated Caller ID
+  Transmission.'' Assistant Clinical Professor, University of Maryland.}
+\cvitem{2017}{Michael Mabey (PhD) Dissertation: ``Forensic Methods and
+  Tools for Web Environments.''}
+\cvitem{2017}{Kevin Liao (Undergraduate) Thesis: ``Toward
+  Inductive Reverse Engineering of Web Applications.'' PhD Student at
+  UIUC.}
+\cvitem{2017}{Gerard Pinto (Masters) Thesis: ``Shadow Phone
+  and Ghost SIM: A Step toward Geo-Location Anonymous Calling in
+  GSM.'' First job at IBM.}
+\cvitem{2017}{Tejas Khairnar (Masters)
+  Thesis: ``Next Generation Black-Box Web Application Vulnerability
+  Analysis Framework.''}
+\cvitem{2016}{Sai Chandramouli (Masters).
+  Thesis: ``E-Mail Header Injections: An Analysis of the World Wide
+  Web.'' First job at Amazon.}
+
+\subsection{Academic Committee Member}
+
+\cvitem{}{\textbf{PhD}}
+\cvitem{2015--Present}{Sandeep Pisharody, PhD.}
+\cvitem{2015--Present}{Abdullah O. Alshalan, PhD.}
+\cvitem{2016--2017}{Loretta Cheeks, PhD.}
+\cvitem{2014--2016}{Carlos Rubio, PhD.}
+\cvitem{2014--2016}{Wonkyu Han, PhD.}
+\cvitem{2015--2016}{Michael Jonas, PhD.}
+\cvitem{2014--2015}{Yiming Jing, PhD.}
+\cvitem{2014--2015}{Priyanka Bagade, PhD.}
+
+
+\cvitem{}{\textbf{Masters}}
+\cvitem{2016--Present}{Sukwaha Kyung}
+\cvitem{2017--Present}{Bhakti Bohara}
+\cvitem{2017}{Anupam Panwar}
+\cvitem{2017}{Ajay Modi}
+\cvitem{2016}{Abhijeet Srivastava}
+\cvitem{2015}{Jeremy Whitaker}
+\cvitem{2015}{Clinton D'souza}
+\cvitem{2014}{Narasimha Gollapudi}
+\cvitem{2014}{James Holmes}
+\cvitem{2014}{Michael Sanchez}
+
+\cvitem{}{\textbf{Undergraduate Honors Thesis}}
+\cvitem{2016--Present}{Josie Lamp}
+\cvitem{2014--Present}{Daniel Martin}
+\cvitem{2017}{Nathaniel Vaughan}
+\cvitem{2016}{John Robertson}
+\cvitem{2014}{Ryan Torrence}
+
+
+\end{document}
